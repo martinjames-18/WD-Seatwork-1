@@ -8,7 +8,6 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Courier New", Courier, monospace;
-  padding-top: 75px;
   background-color: #f9f9f9;
 }
 
@@ -35,9 +34,6 @@ nav {
   height: 75px;
   line-height: 75px;
   padding: 0 100px;
-  position: fixed;
-  top: 0;
-  left: 0;
   background-image: linear-gradient(#1a4a59, #012733);
   z-index: 1000;
   display: flex;
@@ -76,14 +72,16 @@ nav li a:hover {
 }
 
 footer {
-  background: #272727;
+  background: #12353d;
   text-align: center;
   text-transform: uppercase;
-  padding: 40px 20px 0px;
 }
 
 .footer-icons {
-  margin-top: 15px;
+  list-style: none;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .footer-icons a {
@@ -129,6 +127,7 @@ footer {
 
 section {
   height: 100svh;
+  background-color: #012733;
 }
 
 img {
@@ -139,4 +138,35 @@ img {
 .logo {
   display: flex;
   gap: 2rem;
+}
+
+.traversal {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #1a4a59;
+  border-bottom: 1px solid;
+
+  .active {
+    background-color: white;
+    color: #156ab9;
+  }
+
+  h2 {
+    border: 1px solid rgb(255, 255, 255);
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    color: white;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: white;
+      color: #156ab9;
+    }
+  }
 }

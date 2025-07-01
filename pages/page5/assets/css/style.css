@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  background-color: white;
+  padding: 1rem 3rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: black;
+}
+
+.brand span {
+  color: rgb(255, 76, 76);
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: rgb(255, 76, 76);
+}
+
+.header-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1.2rem;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn.login {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  color: #333;
+}
+
+.btn.login:hover {
+  border-color: rgb(255, 76, 76);
+  color: rgb(255, 76, 76);
+}
+
+.btn.register {
+  background-color: rgb(255, 76, 76);
+  color: white;
+  border: none;
+}
+
+.btn.register:hover {
+  background-color: rgb(255, 60, 60);
+}
+
+footer {
+  background-color: white;
+  border-top: 2px solid rgb(255, 76, 76);
+  padding: 2rem 3rem;
+  text-align: center;
+}
+
+.footer-top {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  padding-bottom: 1rem;
+}
+
+.footer-brand h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.footer-brand span {
+  color: rgb(255, 76, 76);
+}
+
+.footer-brand p {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: rgb(255, 76, 76);
+}
+
+.footer-bottom {
+  border-top: 1px solid #eee;
+  padding-top: 1rem;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+section {
+  height: 90svh;
+}
+
+.traversal {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: rgb(245, 245, 245);
+  border-bottom: 1px solid rgb(49, 49, 49);
+
+  .active {
+    background-color: rgb(255, 76, 76);
+    color: #ffffff;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h2 {
+    border: 1px solid rgb(0, 0, 0);
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    color: rgb(255, 76, 76);
+    transition: 0.2s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(255, 76, 76);
+      color: rgb(255, 255, 255);
+    }
+  }
+}

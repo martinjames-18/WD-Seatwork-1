@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+  height: 5rem;
+  background-color: aliceblue;
+  padding: 1rem 6rem;
+  display: flex;
+  align-items: center;
+  ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+    .icon {
+      margin-right: auto;
+    }
+    a {
+      text-decoration: none;
+      cursor: pointer;
+      color: black;
+    }
+  }
+  .signIn {
+    padding: 0.8rem 1.5rem;
+    background-color: rgb(255, 174, 0);
+    border-radius: 10px;
+    h3 {
+      color: rgb(255, 255, 255);
+    }
+  }
+
+  span {
+    color: rgb(255, 76, 76);
+  }
+}
+
+section {
+  height: 88svh;
+  padding: 1rem 3rem;
+
+  div {
+    height: 100%;
+    border-radius: 40px;
+    background-color: rgb(255, 76, 76);
+  }
+}
+
+footer {
+  margin-top: 2rem;
+  background-color: aliceblue;
+  padding: 2rem 3rem;
+  text-align: center;
+  border-top: 1px solid rgb(255, 76, 76);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-brand h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-brand span {
+  color: rgb(255, 76, 76);
+}
+
+.footer-brand p {
+  color: #333;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links {
+  margin-bottom: 1.5rem;
+}
+
+.footer-links a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: rgb(255, 76, 76);
+}
+
+.footer-social a {
+  display: inline-block;
+  margin: 0 0.5rem;
+  color: rgb(255, 76, 76);
+  font-size: 1.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: rgb(255, 174, 0);
+}
+
+.footer-copy {
+  margin-top: 1.5rem;
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.traversal {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  background-color: var(--color-black);
+  border-bottom: 1px solid rgb(49, 49, 49);
+
+  .active {
+    background-color: rgb(255, 174, 0);
+    color: #ffffff;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  h2 {
+    border: 1px solid rgb(0, 0, 0);
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    color: rgb(0, 0, 0);
+    transition: 0.2s ease-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(255, 174, 0);
+      color: #ffffff;
+    }
+  }
+}
